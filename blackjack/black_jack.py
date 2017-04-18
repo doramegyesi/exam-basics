@@ -12,26 +12,37 @@
 # Deck should be represented as string in this format:
 # 12 cards -  3 Clubs, 3 Diamonds, 3 Hearts, 3 Spades
 
+import random
+
 class Card():
     def __init__(self, color = "", value = ""):
         self.color = ["Clubs", "Diamonds", "Hearts", "Spades"]
         self.value = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
         self.card = self.value + self.color
 
-class Deck():
-    def __init__(self, number = 0):
+    def show_some_cards(self):
+        self.list_of_cards =[]
+        for c in self.color and v in self.value:
+            list_of_cards = [v + c]
+        return list_of_cards
+
+class Deck(Card):
+    def __init__(self, color, value="", number =""):
         self.number = number
         self.list_of_cards = []
 
 
 
-deck = Deck(12)
+deck = Card(12)
+
+print(deck.show_some_cards())
+
 print(deck)
 # Should print out:
 # 12 cards -  3 Clubs, 3 Diamonds, 3 Hearts, 3 Spades
-top_card = deck.draw()
-print(top_card)
-print(deck)
+#top_card = deck.draw()
+#print(top_card)
+#print(deck)
 # Should print out:
 # Queen Spades
 # 11 cards - 3 Clubs, 3 Diamonds, 3 Hearts, 2 Spades
