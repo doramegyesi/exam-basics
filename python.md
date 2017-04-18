@@ -46,4 +46,9 @@ The application is accepted if:
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+The constructor is usually the first, special method of a class.
+Looks like this:
+def __init__()
+Python will automatically call it when a new instance is made within that class.
+So when I create a new instance, it is going to inherit whatever I write in the argument
+of the constructor.
