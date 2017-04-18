@@ -36,13 +36,16 @@ The application is accepted if:
 
 #### Your answer:
 [add your answer here]   
-1:   
-2:   
-3:   
-4:   
-5:   
-6:   
-7:   
+1:   That is a keyword to define a function.
+     We need to call the function later though if we actually want to
+     use it.
+2:   Name of the method.
+3:   Argument of the method.
+4:   That is a for loop, the body of the function.
+5:   A variable, will be changed by the for loop here.
+6:   It is a statement that gives a value back to the calling function
+and exits the function afterwards.
+7:   That is the output, it will return at the end of the function.
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
