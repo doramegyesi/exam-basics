@@ -6,7 +6,7 @@
 # Create a Deck class, that has a list of cards in it
 # Create a constructor that takes a whole number as parameter
 # The constructor should fill the list with the number of different cards using at least 4 different colors
-#(except if the number given is smaller than four, than all cards should have different colors)
+# (except if the number given is smaller than four, than all cards should have different colors)
 # We should be able to shuffle the deck, which randomly orders the cards
 # We should be able to draw the top card which returns the drawn card and also removes it from the deck
 # Deck should be represented as string in this format:
@@ -14,13 +14,14 @@
 
 class Card():
     def __init__(self, color = "", value = ""):
-        self.color = color
-        self.value = value
+        self.color = ["Clubs", "Diamonds", "Hearts", "Spades"]
+        self.value = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
         self.card = self.value + self.color
 
 class Deck():
-    #list of cards
-    #constructor as a whole nomber
+    def __init__(self, number = 0):
+        self.number = number
+        self.list_of_cards = []
 
 
 
