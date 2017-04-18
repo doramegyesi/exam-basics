@@ -10,6 +10,6 @@ def odd_average(numbers = []):
         if n % 2 != 0:
             list_of_numbers.append(n)
             average = str(sum(list_of_numbers) / len(list_of_numbers))
-        return average
+            return average
 
-print(odd_average(numbers = [1,2,3]))
+print(odd_average(numbers = [1, 2, 3, 4, 5]))
