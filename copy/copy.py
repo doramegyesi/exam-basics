@@ -8,13 +8,16 @@
 # Read all contents from it and write it to the destination
 
 def copy_a_file(filename, filename2):
-    text = open(filename, "w")
-    t = text.readlines()
-    text2 = open(filename2, "r")
-    t2 = text2.readlines()
-    text = text2
-    text.close()
-    text2.close()
-
+    try:
+        text = open(filename, "r")
+        t = text.read()
+        text2 = open(filename2, "r")
+        t2 = text2.read()
+        text2 = open(filename2, "w")
+        text2.write(t)
+        text.close()
+        text2.close()
+    except TypeError:
+        print("No destination is provided")
 
 print(copy_a_file("new.txt", "old.txt"))
